@@ -3728,11 +3728,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\A8-PC100\\Desktop\\Api\\Api.csproj",
+      "projectUniqueName": "C:\\Users\\A8-PC100\\Desktop\\Apic\\Api-C\\Api.csproj",
       "projectName": "Api",
-      "projectPath": "C:\\Users\\A8-PC100\\Desktop\\Api\\Api.csproj",
+      "projectPath": "C:\\Users\\A8-PC100\\Desktop\\Apic\\Api-C\\Api.csproj",
       "packagesPath": "C:\\Users\\A8-PC100\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\A8-PC100\\Desktop\\Api\\obj\\",
+      "outputPath": "C:\\Users\\A8-PC100\\Desktop\\Apic\\Api-C\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\A8-PC100\\AppData\\Roaming\\NuGet\\NuGet.Config",
