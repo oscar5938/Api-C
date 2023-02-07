@@ -1,0 +1,7 @@
+dotnet add package Microsoft.EntityFrameworkCore
+dotnet add package Microsoft.EntityFrameworkCore.SqlServer
+dotnet add package Microsoft.EntityFrameworkCore.Tools
+"UsersContext":"Server=localhost,1433;Database=BeatStarApi;Pwd=yourStrong(!)Password;Uid=sa;TrustServerCertificate=True"
+dotnet tool install --global dotnet-ef
+dotnet ef migrations add nombreMigracion
+dotnet ef database update
