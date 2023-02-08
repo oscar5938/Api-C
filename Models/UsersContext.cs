@@ -10,5 +10,7 @@ namespace Api.Models
         DbSet<User> Users {get; set;} = null!;
         DbSet<Compra> Compras {get; set;} = null!;
         DbSet<Beat> Beats {get; set;} = null!;
+        DbSet<UserBeat> UserBeats {get; set;} = null!;
+        DbSet<BeatCompraUser> BeatCompraUsers {get; set;} = null!;
     }
 }
