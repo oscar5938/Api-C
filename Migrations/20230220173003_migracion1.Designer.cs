@@ -12,8 +12,8 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace Api.Migrations
 {
     [DbContext(typeof(UsersContext))]
-    [Migration("20230207175145_Migracion1")]
-    partial class Migracion1
+    [Migration("20230220173003_migracion1")]
+    partial class migracion1
     {
         /// <inheritdoc />
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
@@ -59,7 +59,7 @@ namespace Api.Migrations
 
                     b.HasIndex("UserID1");
 
-                    b.ToTable("Beats");
+                    b.ToTable("Beat");
                 });
 
             modelBuilder.Entity("Api.Models.Compra", b =>
@@ -90,7 +90,7 @@ namespace Api.Migrations
 
                     b.HasIndex("UserID");
 
-                    b.ToTable("Compras");
+                    b.ToTable("Compra");
                 });
 
             modelBuilder.Entity("Api.Models.User", b =>
@@ -128,7 +128,7 @@ namespace Api.Migrations
 
                     b.HasKey("ID");
 
-                    b.ToTable("Users");
+                    b.ToTable("User");
                 });
 
             modelBuilder.Entity("Api.Models.Beat", b =>

@@ -56,7 +56,7 @@ namespace Api.Migrations
 
                     b.HasIndex("UserID1");
 
-                    b.ToTable("Beats");
+                    b.ToTable("Beat");
                 });
 
             modelBuilder.Entity("Api.Models.Compra", b =>
@@ -87,7 +87,7 @@ namespace Api.Migrations
 
                     b.HasIndex("UserID");
 
-                    b.ToTable("Compras");
+                    b.ToTable("Compra");
                 });
 
             modelBuilder.Entity("Api.Models.User", b =>
@@ -125,7 +125,7 @@ namespace Api.Migrations
 
                     b.HasKey("ID");
 
-                    b.ToTable("Users");
+                    b.ToTable("User");
                 });
 
             modelBuilder.Entity("Api.Models.Beat", b =>

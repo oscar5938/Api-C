@@ -5,3 +5,4 @@ dotnet add package Microsoft.EntityFrameworkCore.Tools
 dotnet tool install --global dotnet-ef
 dotnet ef migrations add nombreMigracion
 dotnet ef database update
+docker run -e “ACCEPT_EULA=Y” -e “MSSQL_SA_PASSWORD=pwdXXX” -p 1435:1433 -d -d mcr.microsoft.com/mssql/server:2022-latest

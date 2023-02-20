@@ -6,13 +6,13 @@ using Microsoft.EntityFrameworkCore.Migrations;
 namespace Api.Migrations
 {
     /// <inheritdoc />
-    public partial class Migracion1 : Migration
+    public partial class migracion1 : Migration
     {
         /// <inheritdoc />
         protected override void Up(MigrationBuilder migrationBuilder)
         {
             migrationBuilder.CreateTable(
-                name: "Users",
+                name: "User",
                 columns: table => new
                 {
                     ID = table.Column<int>(type: "int", nullable: false)
@@ -27,11 +27,11 @@ namespace Api.Migrations
                 },
                 constraints: table =>
                 {
-                    table.PrimaryKey("PK_Users", x => x.ID);
+                    table.PrimaryKey("PK_User", x => x.ID);
                 });
 
             migrationBuilder.CreateTable(
-                name: "Beats",
+                name: "Beat",
                 columns: table => new
                 {
                     ID = table.Column<int>(type: "int", nullable: false)
@@ -45,21 +45,21 @@ namespace Api.Migrations
                 },
                 constraints: table =>
                 {
-                    table.PrimaryKey("PK_Beats", x => x.ID);
+                    table.PrimaryKey("PK_Beat", x => x.ID);
                     table.ForeignKey(
-                        name: "FK_Beats_Users_UserID",
+                        name: "FK_Beat_User_UserID",
                         column: x => x.UserID,
-                        principalTable: "Users",
+                        principalTable: "User",
                         principalColumn: "ID");
                     table.ForeignKey(
-                        name: "FK_Beats_Users_UserID1",
+                        name: "FK_Beat_User_UserID1",
                         column: x => x.UserID1,
-                        principalTable: "Users",
+                        principalTable: "User",
                         principalColumn: "ID");
                 });
 
             migrationBuilder.CreateTable(
-                name: "Compras",
+                name: "Compra",
                 columns: table => new
                 {
                     ID = table.Column<int>(type: "int", nullable: false)
@@ -72,27 +72,27 @@ namespace Api.Migrations
                 },
                 constraints: table =>
                 {
-                    table.PrimaryKey("PK_Compras", x => x.ID);
+                    table.PrimaryKey("PK_Compra", x => x.ID);
                     table.ForeignKey(
-                        name: "FK_Compras_Users_UserID",
+                        name: "FK_Compra_User_UserID",
                         column: x => x.UserID,
-                        principalTable: "Users",
+                        principalTable: "User",
                         principalColumn: "ID");
                 });
 
             migrationBuilder.CreateIndex(
-                name: "IX_Beats_UserID",
-                table: "Beats",
+                name: "IX_Beat_UserID",
+                table: "Beat",
                 column: "UserID");
 
             migrationBuilder.CreateIndex(
-                name: "IX_Beats_UserID1",
-                table: "Beats",
+                name: "IX_Beat_UserID1",
+                table: "Beat",
                 column: "UserID1");
 
             migrationBuilder.CreateIndex(
-                name: "IX_Compras_UserID",
-                table: "Compras",
+                name: "IX_Compra_UserID",
+                table: "Compra",
                 column: "UserID");
         }
 
@@ -100,13 +100,13 @@ namespace Api.Migrations
         protected override void Down(MigrationBuilder migrationBuilder)
         {
             migrationBuilder.DropTable(
-                name: "Beats");
+                name: "Beat");
 
             migrationBuilder.DropTable(
-                name: "Compras");
+                name: "Compra");
 
             migrationBuilder.DropTable(
-                name: "Users");
+                name: "User");
         }
     }
 }
