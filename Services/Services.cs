@@ -7,11 +7,11 @@ using Microsoft.EntityFrameworkCore;
 
 namespace Api.DAServices.Servicios
 {
-    public class Repository<T> : IDisposable where T : class
+    public class Services<T> : IDisposable where T : class
     {
         private readonly UsersContext context;
 
-        public Repository(UsersContext context)
+        public Services(UsersContext context)
         {
             this.context = context;
         }
