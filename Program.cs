@@ -1,27 +1,43 @@
 using Api.Models;
 using Microsoft.EntityFrameworkCore;
+using System;
 
-var builder = WebApplication.CreateBuilder(args);
+namespace Api
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            var builder = WebApplication.CreateBuilder(args);
 
-// Add services to the container.
-builder.Services.AddDbContext<UsersContext>(options =>
-options.UseSqlServer(builder.Configuration.GetConnectionString("UsersContext")));
+            // Add services to the container.
+            builder.Services.AddDbContext<UsersContext>(options =>
+            options.UseSqlServer(builder.Configuration.GetConnectionString("UsersContext")));
 
-builder.Services.AddControllers();
-// Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
-builder.Services.AddEndpointsApiExplorer();
-builder.Services.AddSwaggerGen();
+            builder.Services.AddControllers();
+            // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
+            builder.Services.AddEndpointsApiExplorer();
+            builder.Services.AddSwaggerGen();
 
-var app = builder.Build();
+            var app = builder.Build();
 
-// Configure the HTTP request pipeline.
-app.UseSwagger();
-app.UseSwaggerUI();
+            // Configure the HTTP request pipeline.
+            app.UseSwagger();
+            app.UseSwaggerUI();
 
-app.UseHttpsRedirection();
+            app.UseHttpsRedirection();
+            app.UseAuthorization();
+            app.MapControllers();
+            app.Run();
 
-app.UseAuthorization();
+            DotNetEnv.Env.Load();
 
-app.MapControllers();
+            DataCall();
 
-app.Run();
+            // Permite leer variables de entorno del fichero .env
+            // var server = Environment.GetEnvironmentVariable("SERVER");
+            // Console.WriteLine($"'{server}'");
+        }
+    }
+}
+

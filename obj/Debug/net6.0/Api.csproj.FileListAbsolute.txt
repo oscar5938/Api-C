@@ -326,3 +326,5 @@ D:\DarioC\Api-C\obj\Debug\net6.0\refint\Api.dll
 D:\DarioC\Api-C\obj\Debug\net6.0\Api.pdb
 D:\DarioC\Api-C\obj\Debug\net6.0\Api.genruntimeconfig.cache
 D:\DarioC\Api-C\obj\Debug\net6.0\ref\Api.dll
+D:\DarioC\Api-C\bin\Debug\net6.0\DotNetEnv.dll
+D:\DarioC\Api-C\bin\Debug\net6.0\Sprache.dll
