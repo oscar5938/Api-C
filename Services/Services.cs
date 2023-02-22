@@ -4,19 +4,20 @@ using System.Linq;
 using System.Data;
 using Api.Models;
 using Microsoft.EntityFrameworkCore;
+using Api.Services;
 
-namespace Api.DAServices.Servicios
+namespace Api.Services
 {
-    public class Services<T> : IDisposable where T : class
+    public class Services<T> : IServices<T> where T : class
     {
-        private readonly UsersContext context;
+        private readonly DataContext context;
 
-        public Services(UsersContext context)
+        public Services(DataContext context)
         {
             this.context = context;
         }
 
-        protected DbSet<T> EntitySet
+        private DbSet<T> EntitySet
         {
             get{
                 return context.Set<T>();

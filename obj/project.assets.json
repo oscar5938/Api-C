@@ -3728,11 +3728,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\A8-PC100\\Desktop\\LOL\\Api-C\\Api.csproj",
+      "projectUniqueName": "C:\\Users\\A8-PC100\\Desktop\\lol\\Api-C\\Api.csproj",
       "projectName": "Api",
-      "projectPath": "C:\\Users\\A8-PC100\\Desktop\\LOL\\Api-C\\Api.csproj",
+      "projectPath": "C:\\Users\\A8-PC100\\Desktop\\lol\\Api-C\\Api.csproj",
       "packagesPath": "C:\\Users\\A8-PC100\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\A8-PC100\\Desktop\\LOL\\Api-C\\obj\\",
+      "outputPath": "C:\\Users\\A8-PC100\\Desktop\\lol\\Api-C\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\A8-PC100\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -3799,7 +3799,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.405\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.406\\RuntimeIdentifierGraph.json"
       }
     }
   }

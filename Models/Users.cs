@@ -1,5 +1,5 @@
 namespace Api.Models{
-    public class User{
+    public class Users{
          public int ID { get; set; }
         public string NombreCuenta { get; set; }
         public string Password { get; set; }
