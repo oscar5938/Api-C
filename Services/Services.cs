@@ -29,7 +29,7 @@ namespace Api.Services
             return await EntitySet.ToListAsync();
         }
 
-        public async Task<T> GetObjetByID(int id)
+        public async Task<T> GetObjetByID(int? id)
         {
             return await EntitySet.FindAsync(id);
         }

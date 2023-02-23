@@ -1,27 +1,25 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\A8-PC100\\Desktop\\lol\\Api-C\\Api.csproj": {}
+    "C:\\Users\\oscar\\OneDrive\\Escritorio\\Api\\Api-C\\Api.csproj": {}
   },
   "projects": {
-    "C:\\Users\\A8-PC100\\Desktop\\lol\\Api-C\\Api.csproj": {
+    "C:\\Users\\oscar\\OneDrive\\Escritorio\\Api\\Api-C\\Api.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\A8-PC100\\Desktop\\lol\\Api-C\\Api.csproj",
+        "projectUniqueName": "C:\\Users\\oscar\\OneDrive\\Escritorio\\Api\\Api-C\\Api.csproj",
         "projectName": "Api",
-        "projectPath": "C:\\Users\\A8-PC100\\Desktop\\lol\\Api-C\\Api.csproj",
-        "packagesPath": "C:\\Users\\A8-PC100\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\A8-PC100\\Desktop\\lol\\Api-C\\obj\\",
+        "projectPath": "C:\\Users\\oscar\\OneDrive\\Escritorio\\Api\\Api-C\\Api.csproj",
+        "packagesPath": "C:\\Users\\oscar\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\oscar\\OneDrive\\Escritorio\\Api\\Api-C\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\A8-PC100\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+          "C:\\Users\\oscar\\AppData\\Roaming\\NuGet\\NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net6.0"
         ],
         "sources": {
-          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -40,6 +38,10 @@
         "net6.0": {
           "targetAlias": "net6.0",
           "dependencies": {
+            "AutoMapper": {
+              "target": "Package",
+              "version": "[12.0.1, )"
+            },
             "Microsoft.EntityFrameworkCore": {
               "target": "Package",
               "version": "[7.0.2, )"

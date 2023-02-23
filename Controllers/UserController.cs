@@ -1,31 +1,9 @@
+using AutoMapper;
 using Api.Models;
 using Api.Services;
-using Microsoft.AspNetCore.Mvc;
 
 namespace Api.Controllers{
-    public class UserController : Controller{
-//[Route("[controller]")]
-
-    //private readonly IServices<Users> _categoryService;
-    private readonly DataContext _context;
-
-    public UserController(/*IServices<Users> categoryService,*/ DataContext context)
-    {
-      //  _categoryService = categoryService;
-        _context = context;
+    public class UserController : GenericController<Users, Model>{
+        public UserController(IServices<Model> repository, IMapper mapper) :base(repository, mapper){}
     }
-
-    // GET /category/GetByProfile/{profileId}
-    //[HttpGet("GetByUser/{profileId}")]
-    public async Task<IActionResult> Index()
-    {
-        var category = await _context.Users.GetObjet();
-        if (category == null)
-        {
-            return NotFound();
-        }
-
-        return Ok(category);
-    }
-}
 }
